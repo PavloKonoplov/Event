@@ -1,0 +1,134 @@
+.category {
+  background-color: white;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 182px;
+  color: #827397;
+  border: none;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 12px 16px;
+  font-size: 24px;
+  font-weight: 500; }
+  .category:hover {
+    font-weight: 700; }
+  .category:focus {
+    color: white;
+    background-color: #827397;
+    box-shadow: none; }
+
+div.event-container {
+  width: 424px;
+  min-height: 432px; }
+
+.event-image {
+  width: 424px;
+  min-height: auto;
+  z-index: 0; }
+
+.event-body {
+  max-width: 382px;
+  min-height: 258px;
+  border-radius: 4px;
+  margin: 45% 5%; }
+
+.badge-category {
+  padding: 4px 32px;
+  display: inline-block;
+  cursor: pointer; }
+
+.border-radius {
+  border-radius: 76px; }
+
+body {
+  overflow-y: scroll;
+  padding: 50px 0 0 0;
+  z-index: 0; }
+
+body::-webkit-scrollbar {
+  display: none; }
+
+.color-primary {
+  color: #827397; }
+
+.color-secondary {
+  color: #D8B9C3; }
+
+.color-optional {
+  color: #353062; }
+
+.bg-primary-c {
+  background-color: #827397; }
+
+.bg-secondary-c {
+  background-color: #D8B9C3; }
+
+.bg-optional-c {
+  background-color: #353062; }
+
+.bg-white-c {
+  background-color: #353062; }
+
+.border-primary-c {
+  border-color: #827397; }
+
+.border-secondary-c {
+  border-color: #D8B9C3; }
+
+.border-optional-c {
+  border-color: #353062; }
+
+.regular {
+  font-weight: 400; }
+
+.medium {
+  font-weight: 500; }
+
+.semibold {
+  font-weight: 600; }
+
+.bold {
+  font-weight: 700; }
+
+.black {
+  font-weight: 900; }
+
+.size14 {
+  font-size: 14px; }
+
+.size18 {
+  font-size: 18px; }
+
+.size20 {
+  font-size: 20px; }
+
+.size24 {
+  font-size: 24px; }
+
+.size30 {
+  font-size: 30px; }
+
+.size36 {
+  font-size: 36px; }
+
+.size48 {
+  font-size: 48px; }
+
+.nav-link:hover {
+  color: #D8B9C3; }
+
+.modal-md {
+  max-width: 400px; }
+
+.modal {
+  color: #0f0f0f; }
+
+.shadow {
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.07); }
+
+.border-none {
+  border: none; }
+
+/*# sourceMappingURL=styles.css.map */

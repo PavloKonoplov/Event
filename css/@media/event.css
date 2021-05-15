@@ -1,0 +1,29 @@
+@media screen and (max-width: 470px) {
+    div.event-container {
+        width: 310px;
+    }
+
+    .event-image {
+        width: 310px;
+    }
+
+    .event-body {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    div.event-container {
+        width: 280px;
+
+    }
+
+    .event-image {
+        width: 280px;
+    }
+
+    .event-body {
+        width: 250px;
+    }
+}
+

@@ -1,1 +1,0 @@
-# PavloKonoplov.github.io

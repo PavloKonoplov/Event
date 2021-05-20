@@ -1,7 +1,8 @@
 @charset "UTF-8";
 body {
   overflow-y: scroll;
-  z-index: 0; }
+  z-index: 0;
+  font-family: Montserrat !important; }
 
 body::-webkit-scrollbar {
   display: none; }
@@ -173,5 +174,8 @@ div.event-container {
 
 .border-radius {
   border-radius: 76px; }
+
+.brand:active {
+  color: #827397 !important; }
 
 /*# sourceMappingURL=styles.css.map */

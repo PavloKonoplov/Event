@@ -4,366 +4,428 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media/event.css">
-    <title>Organization</title>
+    <title>Events</title>
 </head>
 <body>
-<div class="container-fluid p-0 ">
+<div class="container-fluid p-0">
     <nav class="navbar navbar-light navbar-expand-sm mt-3 mb-5 px-sm-5">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="brand text-decoration-none color-primary text-uppercase size36 black " href="index.html">Events</a>
+        <a class="brand text-decoration-none color-primary text-uppercase size36 black" href="index.html">Events</a>
         <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link color-primary size20 medium" href="index.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link color-primary size20 medium" data-toggle="modal"
+                                        data-target="#registerModal" href="">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link color-primary size20 medium" data-toggle="modal"
+                                        data-target="#loginModal" href="">Sign In</a></li>
             </ul>
         </div>
     </nav>
 </div>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-auto">
-            <a href="profile.html" class="nav-link">
-                <p class="color-primary size24 regular text-right">
-                    Profile</p>
-            </a>
-        </div>
-        <div class="col-auto ">
-            <a href="index.html" class="nav-link">
-                <p class="color-primary size24 semibold text-left">
-                    Organization</p>
-            </a>
-        </div>
-    </div>
-</div>
-<hr>
-<div class="container-fluid my-5 d-flex flex-wrap justify-content-center">
-    <div class="col-12 col-md-auto mb-5">
-        <div class="card shadow border-none">
-            <div class="card-body d-flex align-items-center">
-                <img src="img/janko-ferlic-sfL_QOnmy00-unsplash.jpg" class="rounded-circle mx-auto" alt=""
-                     height="95px" width="95px">
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md" role="content">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title size24 color-primary">Sign In</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
             </div>
-            <div class="mb-3">
-                <div class="semibold size24 color-optional text-center">Lviv Events</div>
-                <div class="regular size14 color-primary text-center">Lviv, Ukraine</div>
-            </div>
-            <hr class="m-0">
-            <ul class="list-group list-group-flush d-flex align-items-center" id="list-tab" role="tablist">
-                <li class="list-group-item border-none">
-                    <a class="text-decoration-none" id="list-events-list" data-toggle="list" href="#events" role="tab"
-                       aria-controls="events">
-                        <div class="row">
-                            <!--<div class="col-auto">
-                                <img src="img/myevents@2x.png" alt="">
-                            </div>-->
-                            <div class="col-auto">
-                                <p class="medium m-0 size18 color-optional">My Events</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="list-group-item border-none">
-                    <a class="text-decoration-none text-center" id="list-orgdetails-list" data-toggle="list"
-                       href="#orgdetails"
-                       role="tab" aria-controls="orgdetails">
-                        <div class="row">
-                            <!--<div class="col-auto">
-                                <img src="img/organization@2x.png" alt="">
-                            </div>-->
-                            <div class="col-auto">
-                                <p class="medium m-0 size18 color-optional">Organization
-                                    Details</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="list-group-item border-none mt-5">
-                    <a href="#" class="text-decoration-none">
-                        <p class="medium m-0 size18 color-primary">Log Out</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-12 col-md-8 mb-5 tab-content">
-        <div id="events" role="tabpanel" aria-labelledby="list-events-list"
-             class="tab-pane fade show active card shadow border-none">
-            <div class="card-body">
-                <div class="card-title">
-                    <div class="row">
-                        <div class="col-12 size20 color-primary medium">
-                            <p>Followed Events</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex flex-wrap justify-content-center">
-                    <a href="event.html">
-                        <div class="event-container position-relative m-4 mb-5">
-                            <img class="event-image rounded position-absolute" src="img/eventimage1@2x.png" alt="">
-                            <div class="event-body bg-white position-absolute">
-                                <div class="col justify-content-center">
-                                    <div class="my-3 size24 semibold color-primary">Sports Meet in Galaxy Field</div>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex d-sm-inline-flex flex-wrap flex-row justify-content-center">
-                                        <div class="col-auto">
-                            <span class=" badge-category border-radius bg-primary-c text-white size18 medium"
-                                  href="#Sports">Sports</span>
-                                        </div>
-                                        <div class="mt-2 mt-sm-0 d-flex align-items-center justify-content-lg-start">
-                                            <img src="img/date@2x.png" alt="date">
-                                            <div>
-                                                <p class="m-0 ml-2 medium size16 color-primary">September 12, 2021</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col my-3">
-                                    <p class="size16 regular color-primary">In UEFA Euro 2000 qualifying, Ukraine,
-                                        assigned in Group 4, once again
-                                        managed to top ahead of another favorite, Russia, thanked for an </p>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex align-items-center justify-content-start of">
-                                        <img class="align-self-center" src="img/time@2x.png" alt="date">
-                                        <p class="ml-2 m-0 medium size16 color-primary">19:00 pm</p>
-                                        <img class="ml-2" src="img/location@2x.png" alt="location">
-                                        <p class="ml-2 m-0 medium size16 color-primary">Lviv</p>
-                                        <img class="ml-2" src="img/price@2x.png" alt="price">
-                                        <p class="ml-2 m-0 medium size16 color-primary">Free</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="event.html">
-                        <div class="event-container position-relative m-4">
-                            <img class="event-image rounded position-absolute" src="img/eventimage1@2x.png" alt="">
-                            <div class="event-body bg-white position-absolute">
-                                <div class="col justify-content-center">
-                                    <div class="my-3 size24 semibold color-primary">Sports Meet in Galaxy Field</div>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex d-sm-inline-flex flex-wrap flex-row justify-content-center">
-                                        <div class="col-auto">
-                            <span class=" badge-category border-radius bg-primary-c text-white size18 medium"
-                                  href="#Sports">Sports</span>
-                                        </div>
-                                        <div class="mt-2 mt-sm-0 d-flex align-items-center justify-content-lg-start">
-                                            <img src="img/date@2x.png" alt="date">
-                                            <div>
-                                                <p class="m-0 ml-2 medium size16 color-primary">September 12, 2021</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col my-3">
-                                    <p class="size16 regular color-primary">In UEFA Euro 2000 qualifying, Ukraine,
-                                        assigned in Group 4, once again
-                                        managed to top ahead of another favorite, Russia, thanked for an </p>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex align-items-center justify-content-start of">
-                                        <img class="align-self-center" src="img/time@2x.png" alt="date">
-                                        <p class="ml-2 m-0 medium size16 color-primary">19:00 pm</p>
-                                        <img class="ml-2" src="img/location@2x.png" alt="location">
-                                        <p class="ml-2 m-0 medium size16 color-primary">Lviv</p>
-                                        <img class="ml-2" src="img/price@2x.png" alt="price">
-                                        <p class="ml-2 m-0 medium size16 color-primary">Free</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="event.html">
-                        <div class="event-container position-relative m-4">
-                            <img class="event-image rounded position-absolute" src="img/eventimage1@2x.png" alt="">
-                            <div class="event-body bg-white position-absolute">
-                                <div class="col justify-content-center">
-                                    <div class="my-3 size24 semibold color-primary">Sports Meet in Galaxy Field</div>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex d-sm-inline-flex flex-wrap flex-row justify-content-center">
-                                        <div class="col-auto">
-                            <span class=" badge-category border-radius bg-primary-c text-white size18 medium"
-                                  href="#Sports">Sports</span>
-                                        </div>
-                                        <div class="mt-2 mt-sm-0 d-flex align-items-center justify-content-lg-start">
-                                            <img src="img/date@2x.png" alt="date">
-                                            <div>
-                                                <p class="m-0 ml-2 medium size16 color-primary">September 12, 2021</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col my-3">
-                                    <p class="size16 regular color-primary">In UEFA Euro 2000 qualifying, Ukraine,
-                                        assigned in Group 4, once again
-                                        managed to top ahead of another favorite, Russia, thanked for an </p>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex align-items-center justify-content-start of">
-                                        <img class="align-self-center" src="img/time@2x.png" alt="date">
-                                        <p class="ml-2 m-0 medium size16 color-primary">19:00 pm</p>
-                                        <img class="ml-2" src="img/location@2x.png" alt="location">
-                                        <p class="ml-2 m-0 medium size16 color-primary">Lviv</p>
-                                        <img class="ml-2" src="img/price@2x.png" alt="price">
-                                        <p class="ml-2 m-0 medium size16 color-primary">Free</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="event.html">
-                        <div class="event-container position-relative m-4">
-                            <img class="event-image rounded position-absolute" src="img/eventimage1@2x.png" alt="">
-                            <div class="event-body bg-white position-absolute">
-                                <div class="col justify-content-center">
-                                    <div class="my-3 size24 semibold color-primary">Sports Meet in Galaxy Field</div>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex d-sm-inline-flex flex-wrap flex-row justify-content-center">
-                                        <div class="col-auto">
-                            <span class=" badge-category border-radius bg-primary-c text-white size18 medium"
-                                  href="#Sports">Sports</span>
-                                        </div>
-                                        <div class="mt-2 mt-sm-0 d-flex align-items-center justify-content-lg-start">
-                                            <img src="img/date@2x.png" alt="date">
-                                            <div>
-                                                <p class="m-0 ml-2 medium size16 color-primary">September 12, 2021</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col my-3">
-                                    <p class="size16 regular color-primary">In UEFA Euro 2000 qualifying, Ukraine,
-                                        assigned in Group 4, once again
-                                        managed to top ahead of another favorite, Russia, thanked for an </p>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex align-items-center justify-content-start of">
-                                        <img class="align-self-center" src="img/time@2x.png" alt="date">
-                                        <p class="ml-2 m-0 medium size16 color-primary">19:00 pm</p>
-                                        <img class="ml-2" src="img/location@2x.png" alt="location">
-                                        <p class="ml-2 m-0 medium size16 color-primary">Lviv</p>
-                                        <img class="ml-2" src="img/price@2x.png" alt="price">
-                                        <p class="ml-2 m-0 medium size16 color-primary">Free</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="event.html">
-                        <div class="event-container position-relative m-4">
-                            <img class="event-image rounded position-absolute" src="img/eventimage1@2x.png" alt="">
-                            <div class="event-body bg-white position-absolute">
-                                <div class="col justify-content-center">
-                                    <div class="my-3 size24 semibold color-primary">Sports Meet in Galaxy Field</div>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex d-sm-inline-flex flex-wrap flex-row justify-content-center">
-                                        <div class="col-auto">
-                            <span class=" badge-category border-radius bg-primary-c text-white size18 medium"
-                                  href="#Sports">Sports</span>
-                                        </div>
-                                        <div class="mt-2 mt-sm-0 d-flex align-items-center justify-content-lg-start">
-                                            <img src="img/date@2x.png" alt="date">
-                                            <div>
-                                                <p class="m-0 ml-2 medium size16 color-primary">September 12, 2021</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col my-3">
-                                    <p class="size16 regular color-primary">In UEFA Euro 2000 qualifying, Ukraine,
-                                        assigned in Group 4, once again
-                                        managed to top ahead of another favorite, Russia, thanked for an </p>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex align-items-center justify-content-start of">
-                                        <img class="align-self-center" src="img/time@2x.png" alt="date">
-                                        <p class="ml-2 m-0 medium size16 color-primary">19:00 pm</p>
-                                        <img class="ml-2" src="img/location@2x.png" alt="location">
-                                        <p class="ml-2 m-0 medium size16 color-primary">Lviv</p>
-                                        <img class="ml-2" src="img/price@2x.png" alt="price">
-                                        <p class="ml-2 m-0 medium size16 color-primary">Free</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id="orgdetails" role="tabpanel" aria-labelledby="list-orgdetails-list"
-             class="tab-pane fade  card shadow border-none">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 size20 color-primary semibold">
-                        <p>Organization Details</p>
-                    </div>
-                </div>
-                <hr class="mt-0">
-                <form class="needs-validation" novalidate>
-                    <div class="form-group">
-                        <label for="inputName">Organization Name</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Event-Creator" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAbout">About</label>
-                        <textarea class="form-control" id="inputAbout" required></textarea>
-                    </div>
+            <div class="modal-body">
+                <form>
                     <div class="form-row">
-                        <div class="form-group col-4 col-md-6 col-lg-4">
-                            <label for="inputCountry">Country</label>
-                            <select id="inputCountry" class="form-control custom-select">
-                                <option selected>Ukraine</option>
-                                <option>USA</option>
-                            </select>
+                        <div class="form-group col-12">
+                            <label for="InputEmail" class="sr-only ">Email</label>
+                            <input type="email" class="form-control form-control-sm size18 border-primary-c"
+                                   name="InputEmail"
+                                   id="InputEmail" placeholder="Email">
                         </div>
-                        <div class="form-group col-4 col-md-6 col-lg-4 offset-2 offset-sm-0 offset-lg-1">
-                            <label for="inputCity">City</label>
-                            <input id="inputCity" class="form-control" required>
+                        <div class="form-group col-12">
+                            <label for="InputPass" class="sr-only">Password</label>
+                            <input type="password" class="form-control form-control-sm size18 border-primary-c"
+                                   name="InputPass"
+                                   id="InputPass" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check d-flex align-content-center">
+                                <input type="checkbox" class="form-check-input bg-primary-c" name="InputCheck"
+                                       id="InputCheck">
+                                <label for="InputCheck" class="form-check-label size14 color-primary">Remember
+                                    Me</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col-12 size20 color-primary semibold">
-                            <p>Contacts</p>
-                        </div>
+                    <div class="form-row mt-2">
+                        <button type="submit" class="btn bg-primary-c size18 bold text-white col-12 mt-2">Sign In
+                        </button>
                     </div>
-                    <hr class="mt-0">
-                    <div class="form-group">
-                        <label for="InputInstagram">Instagram</label>
-                        <input type="url" class="form-control" id="InputInstagram" placeholder="https://instagram">
-                    </div>
-                    <div class="form-group">
-                        <label for="InputTelegram">Telegram</label>
-                        <input type="url" class="form-control" id="InputTelegram" placeholder="https://Telegram">
-                    </div>
-                    <div class="form-group">
-                        <label for="InputFacebook">Facebook</label>
-                        <input type="url" class="form-control" id="InputFacebook" placeholder="https://Facebook">
-                    </div>
-                    <div class="form-group">
-                        <label for="InputWebsite">Website</label>
-                        <input type="url" class="form-control" id="InputWebsite" placeholder="https://Website">
-                    </div>
-                    <button type="submit"
-                            class="btn rounded-pill bg-primary-c size20 medium text-white col-12 col-lg-4 offset-0 offset-lg-8 mt-4">
-                        Save
-                    </button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+<div id="registerModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md" role="content">
+        <div class="modal-content px-2">
+            <div class="modal-header">
+                <h4 class="modal-title size24 color-secondary">Sign Up</h4>
+                <button type="button" class="close color-secondary" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="InputUsernameReg" class="sr-only ">Username</label>
+                            <input type="text" class="form-control form-control-sm size18 "
+                                   name="InputUsernameReg"
+                                   id="InputUsernameReg" placeholder="Username">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="InputEmailReg" class="sr-only ">Email</label>
+                            <input type="email" class="form-control form-control-sm size18 "
+                                   name="InputEmailReg"
+                                   id="InputEmailReg" placeholder="Email">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="InputPassReg" class="sr-only">Password</label>
+                            <input type="password" class="form-control form-control-sm size18"
+                                   name="InputPassReg"
+                                   id="InputPassReg" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-row mt-2">
+                        <button type="submit" class="btn bg-secondary-c size18 bold text-white col-12 mt-2">Sign Up
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="registerModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md" role="content">
+        <div class="modal-content px-2">
+            <div class="modal-header">
+                <h4 class="modal-title size24 color-secondary">Sign Up</h4>
+                <button type="button" class="close color-secondary" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="InputUsernameReg2" class="sr-only ">Username</label>
+                            <input type="text" class="form-control form-control-sm size18 "
+                                   name="InputUsernameReg2"
+                                   id="InputUsernameReg2" placeholder="Username">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="InputEmailReg2" class="sr-only ">Email</label>
+                            <input type="email" class="form-control form-control-sm size18 "
+                                   name="InputEmailReg2"
+                                   id="InputEmailReg2" placeholder="Email">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="InputPassReg2" class="sr-only">Password</label>
+                            <input type="password" class="form-control form-control-sm size18"
+                                   name="InputPassReg2"
+                                   id="InputPassReg2" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-row mt-2">
+                        <button type="submit" class="btn bg-secondary-c size18 bold text-white col-12 mt-2">Sign Up
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12  col-md-6 d-flex align-items-center justify-content-center flex-column">
+            <div class="row">
+                <div class="col-12">
+                    <p class="size36 medium color-primary text-center">Escape from your Daily Life
+                        <br> and explore the <span class="bold color-secondary">world around</span></p>
+                </div>
+            </div>
+            <div class="row mt-lg-1">
+                <div class="col-12">
+                    <p class="size20 regular color-primary text-center">In UEFA Euro 2000 qualifying, Ukraine, assigned
+                        in Group 4,
+                        once
+                        again managed to
+                        top
+                        ahead of another favorite, Russia, thanked for an </p>
+                </div>
+            </div>
+            <div class="row mt-lg-4">
+                <div class="col-12">
+                    <a href="" data-toggle="modal"
+                       data-target="#registerModal2">
+                        <button class="border-radius bg-primary-c px-4 py-2 size24 semibold text-white shadow border-none">
+                            Get
+                            Started
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-lg-block col-md-6">
+            <img class="img-fluid" src="img/landing@2x.png" alt="">
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="container-fluid mt-5">
+    <div>
+        <div class="row justify-content-center">
+            <p class="size30 medium color-primary">Most Popular Events</p>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center">
+            <a href="#All">
+                <button class="category">All</button>
+            </a>
+            <a href="#Art">
+                <button class="category">Art</button>
+            </a>
+            <a href="#Music">
+                <button class="category">Music</button>
+            </a>
+            <a href="#Education">
+                <button class="category">Education</button>
+            </a>
+            <a href="#Nightlife">
+                <button class="category">Nightlife</button>
+            </a>
+            <a href="#Sports">
+                <button class="category">Sports</button>
+            </a>
+            <a href="#Food">
+                <button class="category">Food</button>
+            </a>
+            <a href="#Festival">
+                <button class="category">Festival</button>
+            </a>
+
+        </div>
+    </div>
+    <div class="row d-flex flex-wrap justify-content-center">
+        <a href="event.html">
+            <div class="event-container position-relative m-4">
+                <img class="event-image rounded position-absolute" src="img/eventimage1@2x.png" alt="">
+                <div class="event-body bg-white position-absolute">
+                    <div class="col justify-content-center">
+                        <div class="my-3 size24 semibold color-primary">Sports Meet in Galaxy Field</div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex d-sm-inline-flex flex-wrap flex-row justify-content-center">
+                            <div class="col-auto">
+                            <span class=" badge-category border-radius bg-primary-c text-white size18 medium"
+                                  href="#Sports">Sports</span>
+                            </div>
+                            <div class="mt-2 mt-sm-0 d-flex align-items-center justify-content-lg-start">
+                                <img src="img/date@2x.png" alt="date">
+                                <div>
+                                    <p class="m-0 ml-2 medium size16 color-primary">September 12, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <p class="size16 regular color-primary">In UEFA Euro 2000 qualifying, Ukraine,
+                            assigned in Group 4, once again
+                            managed to top ahead of another favorite, Russia, thanked for an </p>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center justify-content-start of">
+                            <img class="align-self-center" src="img/time@2x.png" alt="date">
+                            <p class="ml-2 m-0 medium size16 color-primary">19:00 pm</p>
+                            <img class="ml-2" src="img/location@2x.png" alt="location">
+                            <p class="ml-2 m-0 medium size16 color-primary">Lviv</p>
+                            <img class="ml-2" src="img/price@2x.png" alt="price">
+                            <p class="ml-2 m-0 medium size16 color-primary">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="event.html">
+            <div class="event-container position-relative m-4">
+                <img class="event-image rounded position-absolute" src="img/eventimage1@2x.png" alt="">
+                <div class="event-body bg-white position-absolute">
+                    <div class="col justify-content-center">
+                        <div class="my-3 size24 semibold color-primary">Sports Meet in Galaxy Field</div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex d-sm-inline-flex flex-wrap flex-row justify-content-center">
+                            <div class="col-auto">
+                            <span class=" badge-category border-radius bg-primary-c text-white size18 medium"
+                                  href="#Sports">Sports</span>
+                            </div>
+                            <div class="mt-2 mt-sm-0 d-flex align-items-center justify-content-lg-start">
+                                <img src="img/date@2x.png" alt="date">
+                                <div>
+                                    <p class="m-0 ml-2 medium size16 color-primary">September 12, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <p class="size16 regular color-primary">In UEFA Euro 2000 qualifying, Ukraine,
+                            assigned in Group 4, once again
+                            managed to top ahead of another favorite, Russia, thanked for an </p>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center justify-content-start of">
+                            <img class="align-self-center" src="img/time@2x.png" alt="date">
+                            <p class="ml-2 m-0 medium size16 color-primary">19:00 pm</p>
+                            <img class="ml-2" src="img/location@2x.png" alt="location">
+                            <p class="ml-2 m-0 medium size16 color-primary">Lviv</p>
+                            <img class="ml-2" src="img/price@2x.png" alt="price">
+                            <p class="ml-2 m-0 medium size16 color-primary">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="event.html">
+            <div class="event-container position-relative m-4">
+                <img class="event-image rounded position-absolute" src="img/eventimage1@2x.png" alt="">
+                <div class="event-body bg-white position-absolute">
+                    <div class="col justify-content-center">
+                        <div class="my-3 size24 semibold color-primary">Sports Meet in Galaxy Field</div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex d-sm-inline-flex flex-wrap flex-row justify-content-center">
+                            <div class="col-auto">
+                            <span class=" badge-category border-radius bg-primary-c text-white size18 medium"
+                                  href="#Sports">Sports</span>
+                            </div>
+                            <div class="mt-2 mt-sm-0 d-flex align-items-center justify-content-lg-start">
+                                <img src="img/date@2x.png" alt="date">
+                                <div>
+                                    <p class="m-0 ml-2 medium size16 color-primary">September 12, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <p class="size16 regular color-primary">In UEFA Euro 2000 qualifying, Ukraine,
+                            assigned in Group 4, once again
+                            managed to top ahead of another favorite, Russia, thanked for an </p>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center justify-content-start of">
+                            <img class="align-self-center" src="img/time@2x.png" alt="date">
+                            <p class="ml-2 m-0 medium size16 color-primary">19:00 pm</p>
+                            <img class="ml-2" src="img/location@2x.png" alt="location">
+                            <p class="ml-2 m-0 medium size16 color-primary">Lviv</p>
+                            <img class="ml-2" src="img/price@2x.png" alt="price">
+                            <p class="ml-2 m-0 medium size16 color-primary">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="event.html">
+            <div class="event-container position-relative m-4">
+                <img class="event-image rounded position-absolute" src="img/eventimage1@2x.png" alt="">
+                <div class="event-body bg-white position-absolute">
+                    <div class="col justify-content-center">
+                        <div class="my-3 size24 semibold color-primary">Sports Meet in Galaxy Field</div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex d-sm-inline-flex flex-wrap flex-row justify-content-center">
+                            <div class="col-auto">
+                            <span class=" badge-category border-radius bg-primary-c text-white size18 medium"
+                                  href="#Sports">Sports</span>
+                            </div>
+                            <div class="mt-2 mt-sm-0 d-flex align-items-center justify-content-lg-start">
+                                <img src="img/date@2x.png" alt="date">
+                                <div>
+                                    <p class="m-0 ml-2 medium size16 color-primary">September 12, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <p class="size16 regular color-primary">In UEFA Euro 2000 qualifying, Ukraine,
+                            assigned in Group 4, once again
+                            managed to top ahead of another favorite, Russia, thanked for an </p>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center justify-content-start of">
+                            <img class="align-self-center" src="img/time@2x.png" alt="date">
+                            <p class="ml-2 m-0 medium size16 color-primary">19:00 pm</p>
+                            <img class="ml-2" src="img/location@2x.png" alt="location">
+                            <p class="ml-2 m-0 medium size16 color-primary">Lviv</p>
+                            <img class="ml-2" src="img/price@2x.png" alt="price">
+                            <p class="ml-2 m-0 medium size16 color-primary">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="event.html">
+            <div class="event-container position-relative m-4">
+                <img class="event-image rounded position-absolute" src="img/eventimage1@2x.png" alt="">
+                <div class="event-body bg-white position-absolute">
+                    <div class="col justify-content-center">
+                        <div class="my-3 size24 semibold color-primary">Sports Meet in Galaxy Field</div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex d-sm-inline-flex flex-wrap flex-row justify-content-center">
+                            <div class="col-auto">
+                            <span class=" badge-category border-radius bg-primary-c text-white size18 medium"
+                                  href="#Sports">Sports</span>
+                            </div>
+                            <div class="mt-2 mt-sm-0 d-flex align-items-center justify-content-lg-start">
+                                <img src="img/date@2x.png" alt="date">
+                                <div>
+                                    <p class="m-0 ml-2 medium size16 color-primary">September 12, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-3">
+                        <p class="size16 regular color-primary">In UEFA Euro 2000 qualifying, Ukraine,
+                            assigned in Group 4, once again
+                            managed to top ahead of another favorite, Russia, thanked for an </p>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center justify-content-start of">
+                            <img class="align-self-center" src="img/time@2x.png" alt="date">
+                            <p class="ml-2 m-0 medium size16 color-primary">19:00 pm</p>
+                            <img class="ml-2" src="img/location@2x.png" alt="location">
+                            <p class="ml-2 m-0 medium size16 color-primary">Lviv</p>
+                            <img class="ml-2" src="img/price@2x.png" alt="price">
+                            <p class="ml-2 m-0 medium size16 color-primary">Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
 <div class="d-none d-sm-block px-5 bg-primary-c py-3 mt-5">
     <div class="me-auto size36 text-uppercase black text-white ">Events</div>
     <div class="size14 regular text-white">© 2021 <span class="text-uppercase">Events</span> Inc. All right reserved.
@@ -376,5 +438,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

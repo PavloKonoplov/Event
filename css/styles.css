@@ -177,5 +177,7 @@ div.event-container {
 
 .brand:active {
   color: #827397 !important; }
+.brand:hover {
+  color: #827397 !important; }
 
 /*# sourceMappingURL=styles.css.map */

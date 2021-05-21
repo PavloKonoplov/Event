@@ -12,7 +12,8 @@
     }
 }
 
-@media screen and (max-width: 355px) {
+
+@media screen and (max-width: 370px) {
     div.event-container {
         width: 280px;
     }
@@ -26,3 +27,17 @@
     }
 }
 
+
+@media screen and (max-width: 345px) {
+    div.event-container {
+        width: 240px;
+    }
+
+    .event-image {
+        width: 240px;
+    }
+
+    .event-body {
+        width: 210px;
+    }
+}
